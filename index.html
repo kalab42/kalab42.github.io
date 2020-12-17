@@ -1,80 +1,26 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-	<meta charset="utf-8"  />
-	<title>Суворов Кирилл</title>
-	<link rel="stylesheet" type="text/css" href="Styles.css">
-	
-	
-		<table border="0" align = "right"  width="30%" height="5">
-			<tr >
-			<th>Верных : </th>
-			<th id = "vernie">0</th>
-			<th>Неверных : </th>
-			<th id= "nevern">0</th>
-			<th>Вревени осталось : </th>
-			<th id= "tim">0</th>
-		</tr>
-		</table>
-	
-	
-	</div>
-
-</head>
-<body>
-	<img width="700pt" height="500pt" src="labrokyst.jpg"> 
-	<h1>MathGame</h1>
-	<div id="primer">pri</div>
-	<div id="histor"></div>
-	
-
-<script>
-var tru=0;
-var fal=0;
-
-var primer = document.getElementById('primer');
-var histor = document.getElementById('histor');
-function kirill(){
-   var e = Math.round(Math.random()*9) + "+" +  Math.round(Math.random()*9) + "=";
-   return e;
-}
-function newprimer(){
-
-    primer.innerHTML = kirill() + "<input type='text' id='suvk'>";
-    document.getElementById("suvk").focus();
-    document.getElementById('suvk').onchange=nextprimer;
-  }
-function nextprimer(){
-	var exam = primer.innerHTML
-	var inp = document.getElementById('suvk')
-	exam = exam.substring(0, exam.indexOf("="))
-	var result;
-	if( inp.value==eval(exam)){
-		result = ". Верно." ;
-		tru=tru+1
-	}
-	else{
-		result= ". Неверно, правильный ответ " + eval(exam);
-		fal=fal+1
-	}
-    histor.innerHTML = exam + " = " + inp.value + result + "\n" + histor.innerHTML;
-    newprimer();
-    document.getElementById("suvk").focus();
-    document.getElementById("vernie");
-    vernie.innerHTML = tru;
-    document.getElementById("nevern");
-    nevern.innerHTML = fal;
-    document.getElementById("tim");
-    nevern.innerHTML = fal;
-  }
-
-newprimer();
-
-</script>
-
-
-</body>
-
-
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<title>Адаптивненько</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="#"><img src="menu-button.svg" width="50" alt="Menu"></img></a>
+			<h3>App</h3>
+			<a href="#"><img src="login.svg" width="50" alt="Login"></img></a>
+		</header>
+		<section class="content">
+			<div>
+				<img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1604021663000" width="300" alt="iphone 12 pro">
+				<h4>IPhone 12 Pro</h4>
+				<p>Тот факт, что в iPhone теперь не будет зарядки и наушников, стал одним из самых обсуждаемых после октябрьской презентации. Напомним, компания обосновывала это заботой об экологии: меньше вещей в комплекте — меньше коробка, меньше коробка — больше единиц товара может поместиться в фуре, а значит меньше фур будут ехать из Китая и загрязнять воздух. Считать это решение и аргументацию верными или нет — право каждого. Но факт в том, что коробка теперь действительно существенно компактнее.</p>
+			</div>
+			<div>
+				<img src="https://img.mvideo.ru/Pdb/30052870b.jpg" width="300" alt="IPhone12">
+				<h4>IPhone 12</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			</div>
+		</section>
+	</body>
 </html>

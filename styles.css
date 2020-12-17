@@ -1,0 +1,25 @@
+html,
+body{
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+}
+
+.header{
+	color: white;
+	padding: 20px;
+	background-color: #00695c;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content{
+	flex-direction: column;
+	margin: auto; /* Выравниваем по центру */
+	width: 300;
+	display: flex;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+	justify-content: center;
+}
