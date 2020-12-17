@@ -17,7 +17,7 @@ body{
 .content{
 	flex-direction: column;
 	margin: auto; /* Выравниваем по центру */
-	width: 300;
+	width: 100%;
 	display: flex;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
     padding: 10px;
